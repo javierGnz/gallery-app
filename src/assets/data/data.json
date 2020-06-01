@@ -1,0 +1,30 @@
+  [
+    {
+      id: 1, src: 'https://source.unsplash.com/rLIX0ao0oYk/800x600', info: {
+        local: 'Sodimac',
+        user: 'Mario Casas',
+        date: '01/01/2019'
+      }
+    },
+    {
+      id: 2, src: 'https://source.unsplash.com/N2Z2c_w45_k/800x600', info: {
+        local: 'Casa e Ideas',
+        user: 'Florencia Aguilar',
+        date: '17/12/2019'
+      }
+    },
+    {
+      id: 3, src: 'https://source.unsplash.com/OobQ-HwQXYE/800x600', info: {
+        local: 'Frogmi',
+        user: 'Gonzalo Cuadra',
+        date: '18/11/2019'
+      }
+    },
+    {
+      id: 4, src: 'https://source.unsplash.com/vLEYU4rS8Ps/800x600', info: {
+        local: 'Falabella',
+        user: 'Octavio Kreller',
+        date: '21/06/2019'
+      }
+    }
+  ];

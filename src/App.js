@@ -1,12 +1,13 @@
 import React from 'react';
-import Gallery from './components/Gallery'
-import './App.css';
+import './assets/scss/app.scss';
+import Layout from './components/Layout';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <Gallery />
-    </div>
+    </Layout>
   );
 }
 

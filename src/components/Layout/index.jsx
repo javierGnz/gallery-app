@@ -1,9 +1,10 @@
 import React from 'react'
+import './styles.scss';
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>
-      
+    <div className="wrapper">
+      {children}
     </div>
   )
 }

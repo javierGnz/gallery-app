@@ -1,20 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
+import GalleryImage from './GalleryImage'
+import './styles.scss'
 
-export class Gallery extends Component {
-  constructor() {
-    super();
-    this.state = {
-      openModal: false
-    }
-  }
-  
-  render() {
-    return (
-      <div className="gallery">
-        Galery Div
-      </div>
-    )
-  }
+const Gallery = ({ data }) => {
+  return (
+    <div className="gallery">
+      {data.map(({ id, url }) => {
+        return <GalleryImage key={id} src={url} />
+      })}
+    </div>
+  )
 }
 
 export default Gallery

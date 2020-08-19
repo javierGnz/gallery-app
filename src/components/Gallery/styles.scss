@@ -1,0 +1,27 @@
+.gallery {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover {
+      .gallery__info {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

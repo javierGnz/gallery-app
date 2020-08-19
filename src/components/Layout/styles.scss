@@ -1,6 +1,35 @@
 .wrapper {
-  display: grid;
-  place-items: center;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('../../assets/img/blue-snow.png') repeat;
+  background-attachment: fixed;
+
+  &__title {
+    padding: 2rem 1rem;
+    color: #374955;
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 1.875rem;
+      font-family: var(--ff-heading);
+
+      @media (min-width: 768px) {
+        font-size: 2.25rem;
+      }
+    }
+
+    p {
+      font-size: 0.875rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &__content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }

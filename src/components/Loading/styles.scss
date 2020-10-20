@@ -1,8 +1,35 @@
 .loading {
   display: grid;
-  place-items: center;
 
-  &__content {
-    background-color: aqua;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+
+  &__item {
+    height: 300px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaebeb;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #8e9eab;
+      background: linear-gradient(to right, #eaebeb 0%, #eaebeb 30%, #f7f7f8 52%, #eaebeb 72%);
+      animation: loading 2s ease infinite;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
   }
 }

@@ -18,6 +18,7 @@ const App = () => {
       requestOptions
     ).then((response) => response.json())
     setCats(response)
+    {console.log(response)}
     setLoading(false)
   }
 

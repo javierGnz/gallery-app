@@ -1,6 +1,7 @@
 .gallery {
   display: grid;
   width: 100%;
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
 
@@ -19,9 +20,59 @@
     }
   }
 
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    animation: fade 0.3s ease both;
+
+    place-items: center;
+  }
+
+  &__modal-body {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    max-height: 90%;
+  }
+
+  &__modal-leftside {
+    display: flex;
+  }
+
+  &__modal-rightside {
+    background-color: #9191fd;
+  }
+
+  &__modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   &__image {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
